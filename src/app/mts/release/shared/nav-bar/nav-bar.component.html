@@ -1,0 +1,222 @@
+<!-- <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: rgb(29, 29, 83);">
+    <div class="container-fluid mb-0 mt-0">
+        <span class="navbar-brand" href="#">
+            <div class="col-md-7 col-lg-5 d-none d-md-block ml-5 ">
+                <img href="#" src="../../../../../assets/images/NCCPL Logo (original) - white footer.png"
+                    alt="nccpl-logo" class="img-fluid" style="border-radius: 0 0 0 0; height: 37px; width: 80px;" />
+            </div>
+        </span>
+        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+            data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+
+                <li class="nav-item dropdown">
+                    <span class="nav-link dropdown-toggle btn-sm" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        PROCESS
+                    </span>
+                    <div class="dropdown-menu btn-sm" aria-labelledby="navbarDropdownMenuLink"
+                        style="background-color: rgb(196, 196, 245)">
+                <li class="nav-item dropdown" *ngFor="let menue of menueItems">
+                    <span class="dropdown-item" href="#" *ngIf="menue.menuParentId=='1'">{{menue.menuDesc}}</span>
+
+                </li>
+
+        </div>
+        </li>
+
+
+        <li class="nav-item dropdown">
+            <span class="nav-link dropdown-toggle btn-sm" href="#" id="navbarDropdownMenuLink" role="button"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                REPORTS
+            </span>
+            <div class="dropdown-menu btn-sm" aria-labelledby="navbarDropdownMenuLink"
+                style="background-color: #c4c4f5">
+        <li class="nav-item dropdown" *ngFor="let menue of menueItems">
+
+            <span class="dropdown-item" href="#" *ngIf="menue.menuParentId=='2'" (click)="redirect()">{{menue.menuDesc}} </span>
+
+
+        </li>
+    </div>
+    </li>
+
+    <li class="nav-item dropdown">
+        <span class="nav-link dropdown-toggle btn-sm" href="#" id="navbarDropdownMenuLink" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            DOWNLOADS
+        </span>
+        <div class="dropdown-menu btn-sm" aria-labelledby="navbarDropdownMenuLink"
+            style="background-color: rgb(196, 196, 245)">
+    <li class="nav-item dropdown" *ngFor="let menue of menueItems">
+        <span class="dropdown-item" *ngIf="menue.menuParentId=='3'" href="#">{{menue.menuDesc}}</span>
+    </li>
+    </div>
+    </li>
+
+    <li class="nav-item dropdown">
+        <span class="nav-link dropdown-toggle btn-sm" href="#" id="navbarDropdownMenuLink" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            SECURITY
+        </span>
+        <div class="dropdown-menu btn-sm" aria-labelledby="navbarDropdownMenuLink"
+            style="background-color: rgb(196, 196, 245)">
+    <li class="nav-item dropdown" *ngFor="let menue of menueItems">
+
+        <span class="dropdown-item" href="#" *ngIf="menue.menuParentId=='4'">{{menue.menuDesc}}</span>
+    </li>
+
+    </div>
+    </li>
+
+    <li class="nav-item dropdown">
+        <span class="nav-link dropdown-toggle btn-sm" href="#" id="navbarDropdownMenuLink" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            EXIT
+        </span>
+        <div class="dropdown-menu btn-sm" aria-labelledby="navbarDropdownMenuLink"
+            style="background-color: rgb(196, 196, 245)">
+    <li class="nav-item dropdown" *ngFor="let menue of menueItems">
+
+        <span class="dropdown-item" href="#" *ngIf="menue.menuParentId=='5'">{{menue.menuDesc}}</span>
+    </li>
+    </div>
+    </li>
+    </ul>
+
+    </div>
+    </div>
+</nav> -->
+
+
+
+
+
+
+
+
+
+
+<!-- //local -->
+
+
+
+
+<nav class="navbar navbar-expand-sm navbar-dark 
+
+" style="background-color: rgb(29, 29, 83);">
+  <div class="container-fluid mb-0 mt-0">
+    <span class="navbar-brand" href="#">
+      <div class="col-md-7 col-lg-5 d-none d-md-block ml-5 ">
+        <img href="#" src="../../assets/images/NCCPL Logo (original) - white footer.png" alt="nccpl-logo"
+          class="img-fluid" style="border-radius: 0 0 0 0; height: 37px; width: 80px;" />
+      </div>
+    </span>
+    <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+
+        <li class="nav-item dropdown ">
+          <span class="nav-link dropdown-toggle btn-sm" href="#" id="navbarDropdownMenuLink" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            PROCESS
+          </span>
+          <div class="dropdown-menu btn-sm" aria-labelledby="navbarDropdownMenuLink"
+            style="background-color: rgb(196, 196, 245)">
+            <span class="dropdown-item" (click)="gotoMTSReleaseScreen()" href="#">MTS Release</span>
+            <span class="dropdown-item" href="#">Cash Allocation UIN Wise </span>
+            <span class="dropdown-item" href="#">Cash De-Allocation UIN Wise </span>
+            <span class="dropdown-item" href="#">Cash Release UIN Wise</span>
+            <span class="dropdown-item" href="#">Deposite Release Request </span>
+            <span class="dropdown-item" href="#">Deposite Release Request Throw Symbol </span>
+          </div>
+        </li>
+
+
+        <li class="nav-item dropdown">
+          <span class="nav-link dropdown-toggle btn-sm" href="#" id="navbarDropdownMenuLink" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            REPORTS
+          </span>
+          <div class="dropdown-menu btn-sm" aria-labelledby="navbarDropdownMenuLink"
+            style="background-color: rgb(196, 196, 245)">
+            <span class="dropdown-item" href="#" (click)="gotoDemandPayment()">Exposure Demand Notice</span>
+            <span class="dropdown-item" href="#">MTS Release </span>
+            <span class="dropdown-item" href="#">MTS UnRelease</span>
+            <span class="dropdown-item" href="#">Profit/Loss</span>
+            <span class="dropdown-item" href="#">Financier Brief</span>
+            <span class="dropdown-item" href="#">Financee Brief</span>
+            <span class="dropdown-item" href="#">Buy Statement</span>
+            <span class="dropdown-item" href="#">Sell Statement</span>
+            <span class="dropdown-item" href="#">UIN net Demand</span>
+            <span class="dropdown-item" href="#">NBAF Defined Brokers</span>
+            <span class="dropdown-item" href="#">Cash Release Requests</span>
+            <span class="dropdown-item" href="#">Cash Allocation/Balance Report</span>
+            <span class="dropdown-item" href="#">Pledged Release Request </span>
+            <span class="dropdown-item" href="#">Concentration Margin Financier</span>
+            <span class="dropdown-item" href="#">Pledge by UIN</span>
+            <span class="dropdown-item" href="#">MTM Profit</span>
+            <span class="dropdown-item" href="#">MTM Loss
+            </span>
+            <span class="dropdown-item" href="#"></span>
+
+          </div>
+        </li>
+
+        <li class="nav-item dropdown">
+          <span class="nav-link dropdown-toggle btn-sm" href="#" id="navbarDropdownMenuLink" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            DOWNLOADS
+          </span>
+          <div class="dropdown-menu btn-sm" aria-labelledby="navbarDropdownMenuLink"
+            style="background-color: rgb(196, 196, 245)">
+            <span class="dropdown-item" href="#">MTS Release</span>
+            <span class="dropdown-item" href="#">MTS Un-Release</span>
+            <span class="dropdown-item" href="#">Trade Log</span>
+            <span class="dropdown-item" href="#">Trade Log 1</span>
+             <span class="dropdown-item" href="#">Open Market MTS</span> 
+             <span class="dropdown-item" href="#">Recalculated Open MTS</span>
+          </div>
+        </li>
+
+        <li class="nav-item dropdown">
+          <span class="nav-link dropdown-toggle btn-sm" href="#" id="navbarDropdownMenuLink" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            SECURITY
+          </span>
+          <div class="dropdown-menu btn-sm" aria-labelledby="navbarDropdownMenuLink"
+            style="background-color: rgb(196, 196, 245)">
+            <span class="dropdown-item" href="#">Change Password</span>
+        
+
+          </div>
+        </li>
+
+        <li class="nav-item dropdown">
+          <span class="nav-link dropdown-toggle btn-sm" href="#" id="navbarDropdownMenuLink" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            EXIT
+          </span>
+          <div class="dropdown-menu btn-sm" aria-labelledby="navbarDropdownMenuLink"
+            style="background-color: rgb(196, 196, 245)">
+            <span class="dropdown-item" href="#">YES</span>
+            
+          </div>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</nav>
